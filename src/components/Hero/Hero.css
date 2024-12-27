@@ -1,0 +1,33 @@
+.hero {
+    height: 70vh; /* Adjust the height to your preference */
+    background-image: url('./image.png'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: #ffeb3b; /* Warm yellow text color */
+    text-align: center; /* Center-align text */
+    position: relative; /* To add overlays if needed */
+  }
+  
+  .hero-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Light overlay for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Optional rounded corners */
+    max-width: 700px; /* Limit the width of the content */
+    color: #4caf50; /* Green text for overlay content */
+  }
+  
+  .hero h1 {
+    font-size: 3rem; /* Large title text */
+    margin-bottom: 10px;
+    color: #ff5722; /* Vibrant orange for the main heading */
+  }
+  
+  .hero p {
+    font-size: 1.5rem; /* Subtitle text */
+    color: #009688; /* Teal for the subtitle */
+  }
+  

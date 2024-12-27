@@ -1,0 +1,149 @@
+.footer {
+    background-color: #333;
+    color: white;
+    position: relative; /* Ensures the image stays within the footer */
+  }
+  
+  /* Footer Image - placed at the top of the footer */
+  .footer-image {
+    position: absolute;
+    top: 0; /* Attaches to the top of the footer */
+    left: 0;
+    width: 100%;
+    height: 250px; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .footer-bg {
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Keeps the image behind the footer content */
+  }
+  
+  .footer-top {
+    padding-top: 220px; /* Creates space between image and content */
+  }
+  
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    width: 30%;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .subscribe-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #004080;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .footer-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-image {
+      height: 100px; /* Adjust image height on medium screens */
+    
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-column h4 {
+      font-size: 18px; /* Smaller font for titles */
+    }
+  
+    .social-media {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-bottom p {
+      font-size: 14px; /* Adjust font size for small screens */
+    }
+  
+    .footer-image {
+      height: 80px; /* Adjust image height on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-column h4 {
+      font-size: 16px; /* Even smaller font for extra-small screens */
+    }
+  
+    .footer-links li {
+      font-size: 14px; /* Reduce link font size */
+    }
+  
+    .subscribe-button {
+      padding: 8px; /* Smaller padding on small screens */
+    }
+  
+    .social-icon {
+      font-size: 20px; /* Smaller social icon size */
+    }
+  
+    .footer-image {
+      height: 60px; /* Smaller image height on very small screens */
+    }
+  }
+  
+  .icon-facebook img{
+    width: 20px;
+  }
+  .icon-twitter img{
+    width: 20px;
+  }

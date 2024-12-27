@@ -1,0 +1,105 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar .navbar-brand img {
+    height: 40px;
+  }
+  
+  .navbar .navbar-toggler {
+    border-color: #ddd;
+  }
+  
+
+  
+  .navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .navbar .d-flex .form-control {
+    width: 250px;
+  }
+  
+  
+  
+  .navbar .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .navbar .btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+  }
+  
+  .navbar .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  /* Cart Icon and Button */
+  .navbar .btn-outline-secondary img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  
+  .sidebar.show {
+    display: block;
+  }
+  
+  .sidebar .close-btn {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .sidebar .cart-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .sidebar .cart-item .item-name {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .sidebar .cart-item .item-price {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .sidebar .cart-item .remove-item {
+    font-size: 14px;
+    color: #dc3545;
+    cursor: pointer;
+  }
+  
+  .sidebar .cart-item .remove-item:hover {
+    text-decoration: underline;
+  }
+  

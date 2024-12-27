@@ -1,0 +1,182 @@
+/* General About Us Section Styles */
+.about-us-container {
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    color: white; /* White text on dark background */
+}
+
+/* Carousel Section */
+.about-us-container .carousel {
+    margin-bottom: 30px;
+}
+
+/* About Us Content */
+.about-us-content {
+    text-align: center;
+    margin-bottom: 40px;
+    background-image: url('things-dogs-cant-stand-1117467-06-d5d3635d318f43e2ad6cd0701179944b.webp');
+    background-size: cover; /* Cover the background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffeb3b; /* Warm yellow text color */
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Added shadow for better visibility */
+}
+
+/* Test - Semi-transparent background for text readability */
+.test {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* About Us Content Heading */
+.about-us-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f8f9fa;
+}
+
+/* About Us Content Paragraph */
+.about-us-content p {
+    font-size: 1.1rem;
+    color: #f8f9fa; /* Lighter color for readability */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+   
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Owners Section */
+.owners-section {
+    text-align: center;
+    background-color: rgba(248, 249, 250, 0.8); /* Slightly transparent background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.owners-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.owners-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.owner {
+    width: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.owner-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.owner-details {
+    color: #555;
+}
+
+.owner-details p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.owner-details p strong {
+    font-weight: bold;
+}
+
+/* Carousel Caption Styles */
+.carousel-caption p {
+    font-size: 1.25rem;
+  
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .about-us-content {
+        width: 100%; /* Full width on smaller screens */
+        height: 300px;
+        padding: 20px;
+        background-color: orange;
+    }
+
+    .about-us-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-us-content p {
+        font-size: 1rem;
+    }
+
+    .owners-info {
+        flex-direction: column; /* Stack owners vertically */
+        gap: 20px;
+    }
+
+    .owner {
+        width: 100%; /* Full width for owner info on small screens */
+        text-align: center;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Smaller font size for captions */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile screens */
+    .about-us-content {
+        height: 250px;
+    }
+
+    .about-us-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-us-content p {
+        font-size: 0.9rem;
+    }
+
+    .owner-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .owners-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .owners-info {
+        gap: 10px;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Smaller font size on mobile */
+    }
+}

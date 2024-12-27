@@ -1,0 +1,139 @@
+/* Reset some default styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF; /* White background */
+    color: #1A1A1A; /* Dark text for better readability */
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #A8E6CF; /* Soft mint green for links */
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #FFAB91; /* Soft peach on hover */
+  }
+  
+  h1, h2, h3 {
+    color: #1A1A1A; /* Dark text for headings */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #D7CCC8; /* Light beige background for header */
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #1A1A1A; /* Dark text for header title */
+  }
+  
+  nav a {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: #1A1A1A; /* Dark text for navigation links */
+  }
+  
+  nav a:hover {
+    color: #FFAB91; /* Peach color on hover */
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 40px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #A8E6CF; /* Soft mint green for button */
+    color: #1A1A1A; /* Dark text for buttons */
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #FFAB91; /* Soft peach on button hover */
+  }
+  
+  .card {
+    background-color: #FFFFFF; /* White background for cards */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card-header {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1A1A1A; /* Dark text for card headers */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #D7CCC8; /* Light beige footer */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #1A1A1A; /* Dark text for footer */
+  }
+  
+  footer a {
+    color: #A8E6CF; /* Soft mint green for footer links */
+  }
+  
+  footer a:hover {
+    color: #FFAB91; /* Soft peach on hover */
+  }
+  
+  /* Mobile responsive adjustments */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 10px;
+    }
+  
+    main {
+      padding: 20px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  
