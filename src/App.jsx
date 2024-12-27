@@ -5,6 +5,10 @@ import { Navbar, Footer } from './view/router/componentRouter'; // Import Navbar
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS (includes Popper.js)
+import AddAdmin from "./view/admin/adminPage/addAdmin/AddAdmin.jsx";
+import FoodMangement from "./view/admin/adminPage/food-management/FoodManagement.jsx";
+import Report from "./view/admin/adminPage/report/Report.jsx"
+import AddInfoemation from "./view/addInformation/AddInformation.jsx";
 
 function AppContent() {
   const location = useLocation(); // Get the current location
@@ -27,6 +31,11 @@ function AppContent() {
         <Route path="/adminDashBord" element={<AdminDashBordBage />} /> {/* Admin Dashboard Page */}
         <Route path="/create-bet" element={<AddBet />} /> {/* Add Bet Page */}
         <Route path="/faqs" element={<FaqsAdmin/>}/>
+        <Route path="/add-admin" element={<AddAdmin/>}/>
+        <Route path="/food-management" element={<FoodMangement />} />
+        <Route path="/reports" element ={<Report />} />
+        <Route path="/addInfoemation" element = {<AddInfoemation />} />
+
       </Routes>
 
       {/* Conditionally render Footer */}

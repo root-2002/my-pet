@@ -1,0 +1,77 @@
+
+  
+ .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .summarySection {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .summaryCard {
+    text-align: center;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .summaryValue {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .chartSection {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .chartContainer {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .tableSection {
+    margin-top: 20px;
+  }
+  
+  .salesTable {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .salesTable thead {
+    background-color: #36A2EB;
+    color: #fff;
+  }
+  
+  .salesTable th,
+  .salesTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .salesTable tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .salesTable tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .smallChart {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+  }
+  
