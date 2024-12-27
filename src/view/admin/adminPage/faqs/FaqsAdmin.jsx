@@ -3,8 +3,8 @@ import './FaqsAdmin.css';
 
 function FaqsAdmin() {
   const [faqs, setFaqs] = useState([
-    { id: 1, question: "What is React?", answer: "React is a JavaScript library for building user interfaces." },
-    { id: 2, question: "What is a component?", answer: "A component is a reusable, self-contained unit of a UI in React." },
+    { id: 1, name:"mohammad" ,question: "What is React?", answer: "React is a JavaScript library for building user interfaces." },
+    { id: 2, name:"amer", question: "What is a component?", answer: "A component is a reusable, self-contained unit of a UI in React." },
   ]);
   
   const [newFaq, setNewFaq] = useState({ question: '', answer: '' });
@@ -29,6 +29,10 @@ function FaqsAdmin() {
     setFaqs(faqs.filter(faq => faq.id !== id));
   };
 
+  const handleReplyFaq = (id) =>{
+    
+  }
+
   return (
     <div className="container my-5">
       {/* Hero Section */}
@@ -40,45 +44,7 @@ function FaqsAdmin() {
       </div>
 
       {/* Add FAQ Form */}
-      <div className="card shadow-sm p-4 mt-4">
-        <form onSubmit={handleAddFaq}>
-          <div className="mb-3">
-            <label htmlFor="question" className="form-label">
-              Question
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="question"
-              name="question"
-              value={newFaq.question}
-              onChange={handleInputChange}
-              placeholder="Enter the question"
-              required
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="answer" className="form-label">
-              Answer
-            </label>
-            <textarea
-              className="form-control"
-              id="answer"
-              name="answer"
-              value={newFaq.answer}
-              onChange={handleInputChange}
-              rows="4"
-              placeholder="Enter the answer"
-              required
-            />
-          </div>
-          <div className="text-center">
-            <button type="submit" className="btn btn-primary">
-              Add FAQ
-            </button>
-          </div>
-        </form>
-      </div>
+  
 
       {/* Display FAQs Table */}
       <div className="card shadow-sm p-4 mt-4">
@@ -87,6 +53,7 @@ function FaqsAdmin() {
           <table className="table table-bordered mt-3">
             <thead>
               <tr>
+                <th>Name</th>
                 <th>Question</th>
                 <th>Answer</th>
                 <th>Actions</th>
@@ -95,6 +62,7 @@ function FaqsAdmin() {
             <tbody>
               {faqs.map((faq) => (
                 <tr key={faq.id}>
+                  <td>{faq.name}</td>
                   <td>{faq.question}</td>
                   <td>{faq.answer}</td>
                   <td>
@@ -103,6 +71,12 @@ function FaqsAdmin() {
                       className="btn btn-danger"
                     >
                       Delete
+                    </button>
+                    <button
+                      onClick={() => handleReplyFaq(faq.id)}
+                      className="btn btn-success ms-4"
+                    >
+                      Replay
                     </button>
                   </td>
                 </tr>
